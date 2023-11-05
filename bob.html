@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <link rel="icon" href="images/fevicon.png" type="image/gif" />
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>SRTOOLS</title>
+
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+  <!-- font awesome style -->
+  <link href="css/font-awesome.min.css" rel="stylesheet" />
+
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+
+</head>
+
+<body class="sub_page">
+
+  <div class="hero_area">
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container ">
+          <a class="navbar-brand" href="index.html">
+            <span>SRTOOLS</span>
+          </a>
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class=""> </span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav  ml-auto">
+              <li class="nav-item ">
+                <a class="nav-link" href="index.html">Home </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="calculator.html">Calculator</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="snake-game.html">Snake-game</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="bob.html">Chat with BOB <span class="sr-only">(current)</span></a>
+              </li>
+            </ul>
+            <div class="quote_btn-container">
+              <a href="">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <span>
+                  Call : +34 978 227 095
+                </span>
+              </a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+  </div>
+
+  <!-- CONTENTS section -->
+
+    <section class="service_section layout_padding">
+      <script>
+        function pingIPAddress(ipAddress) {
+          fetch("http://" + ipAddress)
+            .then(response => {
+              if (response.status === 200) {
+                displayMessage("🟢Active");
+              } else {
+                displayMessage("🔴Innactive");
+              }
+            })
+            .catch(error => {
+              displayMessage("🔴Innactive");
+            });
+        }
+    
+        function displayMessage(message) {
+          document.getElementById("result").textContent = message;
+        }
+      </script>
+      <h1>Server status</h1>
+      <div id="result">Loading...</div>
+      <script>
+        pingIPAddress("104.21.63.198");
+      </script>
+
+      <div id="llm_chat"><script type="module" src="./js/llm_chat.18e63736.js"></script><link href="./css/llm_chat.5275ce93.css" rel="stylesheet" type="text/css"><div class="chatui"> <div class="chatui-chat" id="chatui-chat" height="100"> </div> <div class="chatui-inputarea"> <input id="chatui-input" type="text" class="chatui-input" placeholder="Enter your message..."> <button id="chatui-send-btn" class="chatui-send-btn">Send</button> </div> </div><div class="chatui-extra-control"> <button id="chatui-reset-btn" class="chatui-reset-btn">Reset</button> <label id="chatui-info-label"></label> </div><script type="module" src="./js/llm_chat.54531fa5.js"></script></div>
+    </section>
+
+  <!-- end of CONTENTS section -->
+
+  <!-- info section -->
+
+  <section class="info_section layout_padding2">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="info_contact">
+            <h4>
+              Address
+            </h4>
+            <div class="contact_link_box">
+              <a href="">
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                <span>
+                  Woking GU21 4YH, united kingdom
+                </span>
+              </a>
+              <a href="">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <span>
+                  Call : +34 978 227 095
+                </span>
+              </a>
+              <a href="">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <span>
+                  srtools@ditto.com
+                </span>
+              </a>
+            </div>
+          </div>
+          <div class="info_social">
+            <a href="">
+              <i class="fa fa-facebook" aria-hidden="true"></i>
+            </a>
+            <a href="">
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+            </a>
+            <a href="">
+              <i class="fa fa-linkedin" aria-hidden="true"></i>
+            </a>
+            <a href="">
+              <i class="fa fa-instagram" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="info_link_box">
+            <h4>
+              Links
+            </h4>
+            <div class="info_links">
+              <a class="" href="index.html">
+                <img src="images/nav-bullet.png" alt="">
+                Home
+              </a>
+              <a class="" href="calculator.html">
+                <img src="images/nav-bullet.png" alt="">
+                Calculator
+              </a>
+              <a class="" href="snake-game.html">
+                <img src="images/nav-bullet.png" alt="">
+                Snake-game
+              </a>
+              <a class="active" href="bob.html">
+                <img src="images/nav-bullet.png" alt="">
+                Chat with BOB
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="info_detail">
+            <h4>
+              Tools
+            </h4>
+            <p>
+              AI Chatbot, calculator and snake game.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-3 mb-0">
+          <h4>
+            Subscribe
+          </h4>
+          <form action="#">
+            <input type="text" placeholder="Enter email" />
+            <button type="submit">
+              Subscribe
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end info section -->
+
+
+  <!-- footer section -->
+  <footer class="footer_section">
+    <div class="container">
+      <p>
+        &copy; <span id="displayYear"></span> All Rights Reserved By Ditto Ltd.</a>
+      </p>
+    </div>
+  </footer>
+  <!-- footer section -->
+
+  <!-- jQery -->
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <!-- bootstrap js -->
+  <script src="js/bootstrap.js"></script>
+  <!-- custom js -->
+  <script src="js/custom.js"></script>
+
+
+</body>
+
+</html>
